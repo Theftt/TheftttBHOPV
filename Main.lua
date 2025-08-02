@@ -616,7 +616,7 @@ local script = G2L["3"];
 			HasJumpedSinceLand = true
 		end
 	
-		JumpChain += 1
+		JumpChain = JumpChain + 1
 		local newSpeed = math.min(BaseSpeed + JumpChain * SpeedStep, MaxSpeed)
 		ApplySpeed(newSpeed)
 	end
@@ -1001,3 +1001,4 @@ end;
 task.spawn(C_49);
 
 return G2L["1"], require;
+
